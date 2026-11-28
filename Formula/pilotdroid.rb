@@ -6,13 +6,13 @@
 class Pilotdroid < Formula
   desc "Android automation: persistent device-side agent + binary protocol CLI"
   homepage "https://github.com/mofanx/pilotdroid"
-  version "0.8.4"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     depends_on arch: :arm64
-    url "https://github.com/mofanx/pilotdroid/releases/download/v0.8.4/pilotdroid-cli-macos-arm64"
-    sha256 "ded7c4e5dd2502d17ff40413a9653769f6b8ddae43800f0d13b6d085372a9c94"
+    url "https://github.com/mofanx/pilotdroid/releases/download/v0.9.0/pilotdroid-cli-macos-arm64"
+    sha256 "c6107244d93fbe4f8c4350b155cb87227d41fe35ae24d4f689a5bc73b4c0580f"
 
     def install
       bin.install "pilotdroid-cli-macos-arm64" => "pilotdroid-cli"
@@ -21,8 +21,8 @@ class Pilotdroid < Formula
 
   on_linux do
     depends_on arch: :x86_64
-    url "https://github.com/mofanx/pilotdroid/releases/download/v0.8.4/pilotdroid-cli-linux-x86_64"
-    sha256 "548391c7624376ae03e286a2707e0951e46e7b398ed3e3f6d132dbdcf6d06609"
+    url "https://github.com/mofanx/pilotdroid/releases/download/v0.9.0/pilotdroid-cli-linux-x86_64"
+    sha256 "3ff89c5dad60a56e5f996291121b62b16cc009a45d8f14ec13be4729532af7e9"
 
     def install
       bin.install "pilotdroid-cli-linux-x86_64" => "pilotdroid-cli"
